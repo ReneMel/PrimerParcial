@@ -165,9 +165,7 @@ p{
     margin: 2em;
 }
 
-.bio-info img{
-   width: 200px;
-}
+
 
 .bio-info p{
     font-size: 16px;
@@ -332,6 +330,7 @@ footer .social-links {
         max-width: 1440px;
         padding-bottom: 0.18em;
     }
+    /* header */
     .header {
         margin-top: 0;
     }
@@ -339,14 +338,13 @@ footer .social-links {
         width: 5.8em;
         height: auto;    
     }
-    
+    /*bigarea*/
+
     .container p {
         padding : 1px;
-        font-size: 14px;
-        
+        font-size: 14px;        
     }
-
-
+    
    .big-hero img {
        margin-top: 0.5em;
        width: 130px;
@@ -369,6 +367,85 @@ footer .social-links {
 
    }
    .post h2 {
-    margin: 1.2em;
+    margin: 1.0em;
     }
-}
+
+    /*green area*/
+    .post h2 {
+        
+        font-weight: 900;
+        font-size: 1.125em;
+        margin: 0.5em;
+        font-size: 19px; 
+        margin-bottom: 0;
+    }
+    
+    .post li {
+        padding: 1.3em;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .post li article p{
+        padding-left: 20px;
+    }
+
+    .post ul li article  {
+        padding-bottom: 0em;
+    }
+
+    .post ul img {
+        height: 180px;
+    }
+
+    .post ul li h3 {
+        margin-top: 1.5em;
+        padding: 15px, 20px;
+    }
+
+    /*ABOUT*/
+
+    .bio-info img{
+        width: 190px;
+        padding: 1em;
+     }
+
+     .bio-info p {
+            margin :20px;
+            margin-bottom: 10px;
+         
+     }
+
+    
+     
+     .contact-form label{
+        margin-top: 25px;
+        
+    }
+
+     .contact-form input, .contact-form textarea{
+        margin-top: 10px;
+        width: 315px;
+    }
+    .contact-form textarea#message{
+        height: 180px;
+    }
+    .contact-form input[type=submit]{
+        margin-top: 22px;
+        height: 50px;
+    }
+
+    footer .social-links i.fab{
+        margin: 0;
+        margin-left: 16px;
+        margin-right: 20px;
+    }
+
+    footer  p {
+        padding-top: 0px;
+        padding-bottom: 30px; 
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+}   
