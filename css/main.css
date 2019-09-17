@@ -448,4 +448,8 @@ footer .social-links {
         font-weight: 400;
     }
 
+     i .fas .fa-bars ::before{
+        width: 30px
+    }
+
 }   
