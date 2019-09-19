@@ -18,6 +18,9 @@ body {
     font-weight: 400;
 }
 
+.fa-arrow-circle-down {
+    color: #0AC693;
+}
 .header {
     display: flex;
     justify-content: space-between
