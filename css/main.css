@@ -259,71 +259,8 @@ footer .social-links {
 }
 
 /* Pesonalizando estilo para tablets*/
-@media only screen and (min-width: 768px) {
-  
-    .post ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .post ul li {
-        min-height: 350px;
-        max-height: 3500px;
-        margin: 1rem 2rem;
-        flex: 1 0 300px;
 
-    }
-
-    .logo {
-        width: 150px;
-        margin: 1.5em;
-    }
-
-    .show-desktop {
-        display: block;
-    }
-
-    .hide-desktop {
-        display: none;
-    }
-
-    .menu {
-        background-color: #112935; 
-        position: static;
-        z-index: 20;
-        width: auto;
-        height:auto;
-        display: flex;
-        margin-top: 1em;
-    }
-
-
-
-
-    /*TODO: FALTA CSS */
-} 
-
-@media only screen and (min-width: 1024px) {
-
-       /*TODO: FALTA CSS */
-
-
-
-}
-
-@media only screen and (min-width: 1440px) {
-
-    /*TODO: FALTA CSS */
-    .container {
-        width: 80%;
-        margin: 0 auto;
-        max-width: 1440px;
-    }
-}
- 
-@media only screen and (min-width:414px){
+@media only screen and (max-width:414px) and (max-width:767px ){
     .container {
         width: 90%;
         margin: 10px auto;
@@ -342,11 +279,11 @@ footer .social-links {
 
     .container p {
         padding : 1px;
-        font-size: 14px;        
+        font-size: 14px; 
     }
     
    .big-hero img {
-       margin-top: 0.5em;
+       margin: 1em;
        width: 130px;
    }
     
@@ -364,7 +301,6 @@ footer .social-links {
     .fab {
         font-size:  65px;
         margin: 10px;
-
    }
    .post h2 {
     margin: 1.0em;
@@ -415,23 +351,22 @@ footer .social-links {
             margin-bottom: 10px;
          
      }
-
-    
      
      .contact-form label{
         margin-top: 25px;
-        
+        font-weight: 900;
+        font-size: 15px;
     }
 
      .contact-form input, .contact-form textarea{
-        margin-top: 10px;
+        margin-top: 15px;
         width: 315px;
     }
     .contact-form textarea#message{
         height: 180px;
     }
     .contact-form input[type=submit]{
-        margin-top: 22px;
+        margin: 25px 0px;
         height: 50px;
     }
 
@@ -442,14 +377,116 @@ footer .social-links {
     }
 
     footer  p {
-        padding-top: 0px;
+        padding-top: 10px;
         padding-bottom: 30px; 
         font-size: 10px;
         font-weight: 400;
     }
+    
 
-     i .fas .fa-bars ::before{
-        width: 30px
-    }
+
 
 }   
+@media only screen and (min-width:800px){
+   /*devolviendo al valor inicial los valores para cuando esta esta en horizontal*/
+    *, ::before, ::after {
+        font-size: initial;
+    }
+
+    i.fab.fa-github::before ,i.fab.fa-twitter::before {
+        font-size: 50px;
+        margin: 10px;
+   }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px ) {
+    .container {
+        width: 100%;
+        margin: 10px auto;
+        max-width: 1440px;
+        padding-bottom: 0.18em;
+    }
+
+    .post ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .post ul li {
+        min-height: 350px;
+        max-height: 3500px;
+        margin: 1rem 2rem;
+        flex: 1 0 300px;
+
+    }
+
+    .logo {
+        width: 150px;
+        margin: 1.5em;
+    }
+
+    .show-desktop {
+        display: block;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    .menu {
+        background-color: #112935; 
+        position: static;
+        z-index: 20;
+        width: auto;
+        height:auto;
+        display: flex;
+        margin-top: 1em;
+    }
+
+    .post ul img {
+        width: 300px;
+        height: 150;
+    }
+
+    .post article {
+        width: 300px;
+        height: auto;
+    }
+
+    .fab {
+        font-size:  65px;
+        margin: 10px;
+   }
+   
+   .social-links{
+       margin: 10px;
+   }
+
+
+    /*TODO: FALTA CSS */
+} 
+
+@media only screen and (min-width: 1024px) and (max-width:1439px ) {
+
+       /*TODO: FALTA CSS */
+
+
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+    /*TODO: FALTA CSS */
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+
+}
+
+    
