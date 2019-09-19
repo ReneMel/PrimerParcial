@@ -241,6 +241,8 @@ footer .social-links {
     height: calc(100vh - 60px);
 }
 
+
+
 .menu {
     list-style: none;
     text-align: left;
@@ -260,7 +262,7 @@ footer .social-links {
 
 /* Pesonalizando estilo para tablets*/
 
-@media only screen and (max-width:414px) and (max-width:767px ){
+@media only screen and (min-width:414px) and (max-width:768px ){
     .container {
         width: 90%;
         margin: 10px auto;
@@ -360,7 +362,7 @@ footer .social-links {
 
      .contact-form input, .contact-form textarea{
         margin-top: 15px;
-        width: 315px;
+        width: 90%;
     }
     .contact-form textarea#message{
         height: 180px;
@@ -387,9 +389,11 @@ footer .social-links {
 
 
 }   
-@media only screen and (min-width:800px){
-   /*devolviendo al valor inicial los valores para cuando esta esta en horizontal*/
-    *, ::before, ::after {
+@media only screen and (min-width:768px) and (max-width:1023px) {
+   /*
+   devolviendo al valor inicial los valores para cuando esta esta en horizontal
+   */
+    i, ::before, ::after {
         font-size: initial;
     }
 
@@ -397,9 +401,10 @@ footer .social-links {
         font-size: 50px;
         margin: 10px;
    }
-
-
 }
+
+
+
 
 @media only screen and (min-width: 768px) and (max-width:1023px ) {
 
@@ -422,8 +427,11 @@ footer .social-links {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-self: center;
+        justify-items: flex-start;
     }
+        
+
     
     .post ul li {
         min-height: 350px;
@@ -454,6 +462,10 @@ footer .social-links {
         height:auto;
         display: flex;
         margin-top: 1em;
+        
+    }
+    nav ul li:last-child :hover{
+        color: red;
     }
 
     /*pequeños arreglos a parte de post*/
@@ -467,12 +479,20 @@ footer .social-links {
         height: auto;
     }
 
+    .container .post {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }    
+
     /*iconos*/
     .fab {
         font-size:  65px;
         margin: 10px;
    }
-   
+
+
    .social-links{
        margin: 10px;
    }
@@ -481,11 +501,83 @@ footer .social-links {
     /*TODO: FALTA CSS */
 } 
 
-@media only screen and (min-width: 1024px) and (max-width:1439px ) {
+@media only screen and (min-width: 1024px)  {
 
        /*TODO: FALTA CSS */
 
+    
+    .post ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: unset;
+        justify-self: center;
+        justify-items: flex-start;
+    }
 
+    .post article {
+        margin: 1em;
+        height: 408px;
+    }
+       .menu {
+        background-color: #112935; 
+        position: static;
+        z-index: 20;
+        width: auto;
+        height:auto;
+        display: flex;
+        margin-top: 1em;
+    }
+
+    .hide-desktop{
+        display: none;
+    }
+
+    .social-links{
+        margin: 20px;
+    }
+    
+    .logo{
+        width: 200px;
+        margin: 2em;
+    }
+    .fab {
+        font-size:  65px;
+        margin: 10px;
+    }
+    nav ul li:last-child :hover{
+        color: red;
+    }
+
+    section.about div {
+        display: flex;
+        flex-flow: wrap;
+    }
+    .about{
+        margin-bottom: 10px;
+    }
+    
+    .about .container h2{
+        width: 100vw;
+    }
+    .about .container .bio-info, .about .container .bio-.contact{
+        width: 50vw;
+        text-align: center;
+    }
+    .about .container .bio-info img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%
+    }
+    .contact-form input[type=submit]{
+        margin: 25px 0px;
+        height: 50px;
+        width: 50%;
+    }
+    .contact-form textarea , .contact-form input{
+        width: 110%;
+    }
+    
 
 }
 
@@ -498,6 +590,43 @@ footer .social-links {
         max-width: 1440px;
     }
 
-}
+    .menu {
+        background-color: #112935; 
+        position: static;
+        z-index: 20;
+        width: auto;
+        height:auto;
+        display: flex;
+        margin-top: 1em;
+    }
+    .hide-desktop{
+        display: none;
+    }
 
+    .post ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-self: center;
+        justify-items: flex-start;
+    }
+
+    .fab {
+        font-size:  75px;
+        margin: 10px;
+    }
+    nav ul li:last-child :hover{
+        color: red;
+
+    }
+    .about .container h2{
+        width: 100vw;
+    }
+    .about .container .bio-info, .about .container .bio-.contact{
+        width: 45vw;
+        text-align: center;
+    }
+
+
+}
     
