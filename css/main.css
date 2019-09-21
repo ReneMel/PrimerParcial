@@ -266,13 +266,14 @@ footer .social-links {
 /* Pesonalizando estilo para tablets*/
 
 @media only screen and (min-width:414px) and (max-width:768px ){
+    /*se cambio el tamaño de los contenedores para que estos subieran un tamaño aceptable visiblemente para telefonos.*/
     .container {
         width: 90%;
         margin: 10px auto;
         max-width: 1440px;
         padding-bottom: 0.18em;
     }
-    /* header */
+    /* header: cambios a los tamaños de las imagenes y los margenes para satisfacer el tamaño de las imagenes */
     .header {
         margin-top: 0;
     }
@@ -280,7 +281,7 @@ footer .social-links {
         width: 5.8em;
         height: auto;    
     }
-    /*bigarea*/
+    /*bigarea: dimensiones de imagenes y p*/
 
     .container p {
         padding : 1px;
@@ -298,7 +299,7 @@ footer .social-links {
     letter-spacing: 0.003em;
     margin-top: 1em ;
     }
-
+/* se cambió tamanos de los social links y sus margenes , ademas de revisar las dimensiones de estos y los formularios.*/
    .social-links {
        margin-top: 0em;
        margin-bottom: 3em;
@@ -311,7 +312,7 @@ footer .social-links {
     margin: 1.0em;
     }
 
-    /*green area*/
+    /*green area: se cambio valores de las fuentes, los contenedores li y las imagenes a manera de que quede */
     .post h2 {
         
         font-weight: 900;
@@ -395,6 +396,7 @@ footer .social-links {
 @media only screen and (min-width:768px) and (max-width:1023px) {
    /*
    devolviendo al valor inicial los valores para cuando esta esta en horizontal
+   esto se agrego debido a que en este rango se tenía un problema con los datos de font-size dados. 
    */
     i, ::before, ::after {
         font-size: initial;
@@ -530,7 +532,11 @@ footer .social-links {
         display: flex;
         margin-top: 1em;
     }
+    /*
+    
+        se elimina los iconos funcionales para telefono, puestos que estos no son necesarios.
 
+    */
     .hide-desktop{
         display: none;
     }
@@ -550,7 +556,9 @@ footer .social-links {
     nav ul li:last-child :hover{
         color: red;
     }
-
+      /*para pasar el footer a una tabla con dos columas se decidió hacerlo por un flex wrap para que los tamaños
+      de los demas contenedores decididos por medio del width-view fueran acomodados de la manera más convenienite
+      */
     section.about div {
         display: flex;
         flex-flow: wrap;
@@ -558,7 +566,7 @@ footer .social-links {
     .about{
         margin-bottom: 10px;
     }
-    
+  
     .about .container h2{
         width: 100vw;
     }
@@ -572,13 +580,16 @@ footer .social-links {
         margin-right: auto;
         width: 30%
     }
+
+    /*se cambió el width para que coincidiera con la imagen y este fuera menor que los text-area*/
     .contact-form input[type=submit]{
         margin: 25px 0px;
         height: 50px;
         width: 50%;
     }
+    /*se cambió el tamano de los text-area para que estos completaran una cantidad correcta de la pantalla*/
     .contact-form textarea , .contact-form input{
-        width: 110%;
+        width: 150%;
     }
     
 
